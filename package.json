@@ -1,0 +1,28 @@
+{
+  "name": "react-form-hooks",
+  "version": "0.0.1",
+  "source": "src/index.ts",
+  "types": "dist/types.d.ts",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "npx parcel ./src/__test__/index.html",
+    "build": "npx parcel build",
+    "lint": "npx eslint",
+    "mk:hooks": "npx cfh --entry=./src --files=index.tsx,types.ts,helper.ts"
+  },
+  "author": "<im.wongch1sum@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "2.4.1",
+    "@parcel/transformer-typescript-types": "2.4.1",
+    "@types/react": "^18.0.3",
+    "@types/react-dom": "^18.0.0",
+    "create-folder-helper": "^0.0.4",
+    "eslint": "^8.13.0",
+    "parcel": "^2.4.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rollup": "^2.70.1",
+    "typescript": "^4.6.3"
+  }
+}
