@@ -1,7 +1,9 @@
-import type {FieldProps} from './types';
+import { useField } from "./logic";
+import type { FieldProps } from "./types";
 
-export function Field (props:FieldProps) {
-    return <div></div>
+export function Field(props: FieldProps) {
+  const { view } = useField(props);
+  return view;
 }
 
-export type {FieldProps} from './types';
+export type { FieldProps } from "./types";
